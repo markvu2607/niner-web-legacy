@@ -32,7 +32,7 @@ bun install && bun dev
 
 - Branch name template: `<issue_type>/<issue_id>-<name_of_issue>`:
 
-  - `<pr_type>`: feat, docs, fix, refactor, chore, revert,...
+  - `<issue_type>`: feat, docs, fix, refactor, chore, revert,...
   - Example: `feat/123-do-somethings`.
 
 - Commit template: `<issue_type>: <name_of_issue>`:
@@ -46,7 +46,7 @@ bun install && bun dev
   - Example for description:
     - `- Do somethings`
     - `- Fixes: #123`
-  - Add more infomation in right side.
+  - Add more information in right side.
 
 - Merging:
 

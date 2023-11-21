@@ -17,8 +17,16 @@ Niner is a social network platform for book reader.
 
 ## Getting Started
 
+- Install dependencies:
+
 ```bash
-bun install && bun dev
+bun install
+```
+
+- Start dev:
+
+```bash
+bun run dev
 ```
 
 ## Contributing
@@ -45,7 +53,7 @@ bun install && bun dev
   - Description: Describe detail pr (if pr is so simple, do not need it), reference to issue_id.
   - Example for description:
     - `- Do somethings`
-    - `- Fixes: #123`
+    - `- Close: #123`
   - Add more information in right side.
 
 - Merging:

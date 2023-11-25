@@ -1,5 +1,5 @@
 import { Container } from "@/_components/containers/container";
-import { LoginForm } from "../_components/login-form";
+import { SignInForm } from "../_components/sign-in-form";
 import { cn } from "@/_utils";
 import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
@@ -16,7 +16,7 @@ export default function SignInPage() {
         >
           <div className="w-full max-w-[1200px] relative">
             <Container className="w-[320px] absolute right-20 -top-6">
-              <LoginForm />
+              <SignInForm />
             </Container>
           </div>
         </div>

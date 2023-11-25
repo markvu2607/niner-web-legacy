@@ -13,7 +13,7 @@ import { Label } from "@/_components/ui/label";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-export function LoginForm() {
+export function SignInForm() {
   return (
     <Card>
       <CardHeader className="space-y-1">

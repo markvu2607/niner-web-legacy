@@ -1,7 +1,7 @@
-import moment from "moment";
-import { footerMenu, connections } from "@/_configs/footer-menu";
-import Link from "next/link";
 import { Button } from "@/_components/ui/button";
+import { connections, footerMenu } from "@/_configs/footer-menu";
+import dayjs from "dayjs";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -35,7 +35,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div>© {moment().year()} Niner, Inc.</div>
+        <div>© {dayjs().year()} Niner, Inc.</div>
       </div>
     </footer>
   );

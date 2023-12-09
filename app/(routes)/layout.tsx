@@ -1,5 +1,6 @@
 import { inter } from "@/_configs/font";
 import { cn } from "@/_utils";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import "../globals.css";
 
@@ -21,7 +22,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/icons/short-logo.svg" />
       </head>
-      <body className={cn(inter.className, "antialiased")}>{children}</body>
+      <body className={cn(inter.className, "antialiased")}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }

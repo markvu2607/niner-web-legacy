@@ -1,4 +1,4 @@
-import { cn } from "@/_utils";
+import { cn } from "@/utils";
 
 export function Container({
   className,

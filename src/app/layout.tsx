@@ -1,8 +1,8 @@
-import { inter } from "@/_configs/font";
-import { cn } from "@/_utils";
+import { inter } from "@/configs/font";
+import { cn } from "@/utils";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import "../globals.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: {

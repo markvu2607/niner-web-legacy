@@ -1,4 +1,4 @@
-import { Button } from "@/_components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -6,18 +6,19 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/_components/ui/card";
-import { Input } from "@/_components/ui/input";
-import { Label } from "@/_components/ui/label";
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
-export function SignUpForm() {
+export function SignInForm() {
   return (
     <Card>
       <CardHeader className="space-y-1">
-        <CardTitle className="text-2xl">Sign up</CardTitle>
-        <CardDescription>Enter your information to sign up</CardDescription>
+        <CardTitle className="text-2xl">Sign in</CardTitle>
+        <CardDescription>Enter your email below to sign in</CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         <div className="grid grid-cols-2 gap-6">
@@ -41,10 +42,6 @@ export function SignUpForm() {
           </div>
         </div>
         <div className="grid gap-2">
-          <Label htmlFor="name">Name</Label>
-          <Input id="name" type="text" placeholder="Your name" />
-        </div>
-        <div className="grid gap-2">
           <Label htmlFor="email">Email</Label>
           <Input id="email" type="email" placeholder="m@example.com" />
         </div>
@@ -52,13 +49,15 @@ export function SignUpForm() {
           <Label htmlFor="password">Password</Label>
           <Input id="password" type="password" />
         </div>
-        <div className="grid gap-2">
-          <Label htmlFor="confirm-password">Confirm password</Label>
-          <Input id="confirm-password" type="password" />
-        </div>
       </CardContent>
-      <CardFooter>
-        <Button className="w-full">Sign up</Button>
+      <CardFooter className="flex-col gap-y-2">
+        <Button className="w-full">Sign in</Button>
+        <CardDescription className="text-xs">
+          Or create new account?
+          <Button variant="link" size="sm" className="p-1 underline" asChild>
+            <Link href="/sign-up">Sign up</Link>
+          </Button>
+        </CardDescription>
       </CardFooter>
     </Card>
   );

@@ -1,6 +1,6 @@
-import { Container } from "@/_components/containers/container";
-import { SignInForm } from "../_components/sign-in-form";
-import { cn } from "@/_utils";
+import { Container } from "@/components/containers/container";
+import { SignInForm } from "../components/sign-in-form";
+import { cn } from "@/utils";
 import { ExclamationTriangleIcon } from "@radix-ui/react-icons";
 
 export default function SignInPage() {

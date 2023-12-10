@@ -1,5 +1,5 @@
-import { Button } from "@/_components/ui/button";
-import { connections, footerMenu } from "@/_configs/footer-menu";
+import { Button } from "@/components/ui/button";
+import { connections, footerMenu } from "@/configs/footer-menu";
 import dayjs from "dayjs";
 import Link from "next/link";
 

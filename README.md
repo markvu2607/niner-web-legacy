@@ -13,20 +13,21 @@ Niner is a social network platform for book reader.
 
 ## System Requirement
 
-- [Bun](https://bun.sh/) (>= v1.0.12)
+- [NodeJS](https://nodejs.org/) (>= v20.8.0)
+- [pnpm](https://pnpm.io/) (>= v8.10.0)
 
 ## Getting Started
 
 - Install dependencies:
 
 ```bash
-bun install
+pnpm install
 ```
 
 - Start dev:
 
 ```bash
-bun run dev
+pnpm dev
 ```
 
 ## Contributing

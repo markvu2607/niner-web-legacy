@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/icons/short-logo.svg" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={cn(inter.className, "antialiased")}>
         {children}
